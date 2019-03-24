@@ -1,6 +1,9 @@
 {
   "name": "movie-express",
   "version": "1.0.0",
+  "engines": {
+    "node": "10.15.2"
+  },
   "description": "A place where can upload movies info.",
   "main": "app.js",
   "scripts": {
