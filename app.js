@@ -2,7 +2,7 @@
 const express = require('express')
 const app = express()
 const request = require('request')
-const port = 3000
+var http = require('http').Server(app);
 
 // Public folder for assets
 app.use(express.static('public'));
@@ -33,4 +33,6 @@ app.get('/results', function(req, res) {
 app.get('*', (req, res) => res.send('Page NOT found!'))
 
 // Start Server
-app.listen(port, () => console.log(`Server listening on port ${port}!`))
+http.listen(process.env.PORT || 3000, function(){
+    console.log('listening on', http.address().port);
+  });
