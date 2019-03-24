@@ -1,0 +1,20 @@
+<% include partials/header %>
+
+<section id="main">
+    <div class="container">
+        <h1 class="display-3">Movie Express</h1>
+        <div class="row">
+            <div class="col-sm-12">
+                <form action="/results" method="GET">
+                    <input class="form-control form-control-lg" type="search" placeholder="Name" name="search" required>
+                
+                    <input class="form-control form-control-lg" type="number" placeholder="Year" name="year">
+                
+                    <button class="btn btn-outline-dark btn-lg btn-block" type="submit">Find Movies</button>
+                </form> 
+            </div>
+        </div>
+    </div>
+</section>
+
+<% include partials/footer %>

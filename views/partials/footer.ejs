@@ -1,0 +1,61 @@
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-9 col-lg-9">
+                <script>
+                    var currentYear = new Date().getFullYear();
+                    document.write("<p>&copy" + currentYear + "." + " Hand made with <i class='far fa-heart'></i> for you. by <a href='http://velozityweb.com/WRivera' class='footerLinks'>William Rivera</a>.</p>");
+                </script>
+            </div>
+            <div class="col-sm-12 col-md-3 col-lg-3">
+                <ul class="list-unstyled" id="fooIcons">
+                    <li>
+                        <a href="https://www.linkedin.com/in/williamriveraramos/" data-toggle="tooltip" data-placement="top" title="Connect with me on Linkedin"><i class="fab fa-linkedin-in mr-3"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/WilliamRiveraRamos" data-toggle="tooltip" data-placement="top" title="Fork me on GitHub"><i class="fab fa-github mr-3"></i></a>
+                    </li>
+                    <li>
+                        <a href="http://velozityweb.com/blog" data-toggle="tooltip" data-placement="top" title="Visit my blog"><i class="fab fa-wordpress mr-3"></i></a>
+                    </li>
+                    <li>
+                        <a href="mailto:rivera.email@gmail.com" data-toggle="tooltip" data-placement="top" title="Send me a message"><i class="fas fa-at"></i></a>
+                    </li>                
+                </ul>
+            </div>
+        </div>
+        <section id="powered">
+            <div class="row">
+                <div class="col-sm-12">
+                    <p>Powered by : <a href="http://www.omdbapi.com" target="_blank" class="poweredLinks">OMDb API</a>, <a href="https://nodejs.org/en/" target="_blank" class="poweredLinks">Node.js</a>, and <a href="https://expressjs.com/" target="_blank" class="poweredLinks">Express.js</a> </p>
+                </div>
+            </div>
+        </section>
+        
+    </div>
+</footer>
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+<!-- Tooltips -->
+<script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+</script>
+
+<!-- JQuery for Nav Bar Transition -->
+<script>
+    $(function () {
+        $(document).scroll(function() {
+            var $nav = $("#mainNavBar");
+            $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+        });
+    });
+</script>
+    
+    </body>
+</html>

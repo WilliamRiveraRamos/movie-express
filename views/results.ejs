@@ -1,0 +1,32 @@
+<% include partials/header %>
+
+<section>
+    <div class="container">
+        <h1 class="display-3">We found this movies!</h1>
+        <div class="row">
+        
+            <% data['Search'].forEach(function(movie) { %>
+        
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            <h5 class="card-title"><%= movie['Title'] %></h5>
+                        </div>
+                        <div class="card-body">
+                            <img class="poster" src="<%= movie['Poster'] %>" />
+                            <p class="card-text"><span class="text-uppercase"><%= movie['Type'] %></span></p>
+                            <a href="https://www.imdb.com/title/<%= movie['imdbID'] %>" target="_blank" data-toggle="tooltip" data-placement="top" title="More info on imdb"><img src="imdb-logo.png" width="80px" /></a>
+                        </div>
+                        <div class="card-footer">
+                            <p><%= movie['Year'] %></p>
+                        </div>
+                    </div>
+                </div>
+            
+            <% }) %>
+
+        </div>
+    </div>
+</section>
+
+<% include partials/footer %>
