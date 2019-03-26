@@ -13,6 +13,15 @@ h5 {
     font-weight: 300;
 }
 
+#main h1 {
+    color: whitesmoke;
+    text-align: center;
+    margin-top: 15rem;
+    margin-bottom: 5rem;
+    font-weight: lighter;
+    font-size: 4rem;
+}
+
 #main form input {
     margin-bottom: 3rem;
 }
@@ -122,4 +131,26 @@ text-decoration: underline;
 .card-footer {
     color: whitesmoke;
     background-color: rgb(41, 41, 41);
+}
+
+@media(max-width: 667px) {
+
+    #main h1 {
+        font-size: 3rem;
+        margin-top: 13rem;
+    }
+
+    #main .container {
+        display: block;
+        max-width: 90%;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    .form-inline {
+        visibility: hidden;
+    }
+
 }
