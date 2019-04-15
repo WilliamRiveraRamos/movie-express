@@ -1,4 +1,4 @@
-# Movie express
+# movie-express
 You can setup and implement this app very quickly on your project.
 
 # Use
