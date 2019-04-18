@@ -20,7 +20,7 @@ app.get('/about', (req, res) => res.render('about'))
 app.get('/results', function(req, res) {
     var query = req.query.search;
     var year = req.query.year;
-    var url = 'http://www.omdbapi.com/?apikey=1e829d0e&s=' + query + '&y=' + year;
+    var url = 'http://www.omdbapi.com/?apikey=YOURAPIKEYHERE&s=' + query + '&y=' + year;
 
     request(url, function(error, response, body) {
         var data = JSON.parse(body)
