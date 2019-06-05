@@ -13,8 +13,23 @@
   "author": "William Rivera",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^8.0.0",
     "ejs": "^2.6.1",
     "express": "^4.16.4",
     "request": "^2.88.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WilliamRiveraRamos/movie-express.git"
+  },
+  "keywords": [
+    "Node",
+    "Express",
+    "JavaScript"
+  ],
+  "bugs": {
+    "url": "https://github.com/WilliamRiveraRamos/movie-express/issues"
+  },
+  "homepage": "https://github.com/WilliamRiveraRamos/movie-express#readme"
 }
