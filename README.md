@@ -1,6 +1,10 @@
 # movie-express
 You can setup and implement this app very quickly on your project.
 
+## Screenshot
+![Movie Express Screenshot](http://velozityweb.com/WRivera/screenshoots/main-page-movie-express.png)
+
+
 # Use
 1. Download or clone this repo
 2. Install **all dependencies** on package.json
