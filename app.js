@@ -2,6 +2,8 @@
 const express = require('express');
 const request = require('request');
 const app = express();
+require('dotenv').config()
+
 var http = require('http').Server(app);
 
 // Public folder for assets
@@ -18,9 +20,10 @@ app.get('/about', (req, res) => res.render('about'));
 
 // results page route
 app.get('/results', function(req, res) {
+    const omdb = process.env.APIKEY;
     var query = req.query.search;
     var year = req.query.year;
-    var url = 'http://www.omdbapi.com/?apikey=YOURAPIKEYHERE&s=' + query + '&y=' + year;
+    var url = 'http://www.omdbapi.com/?apikey='+omdb+'&s=' + query + '&y=' + year;
 
     request(url, function(error, response, body) {
         var data = JSON.parse(body)
